@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body,
 button,
 input {
@@ -30,6 +34,8 @@ body {
 }
 
 .header-content {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -94,7 +100,6 @@ body {
 
 .project-card {
   overflow: hidden;
-  position: relative;
   padding: 1rem;
   width: 21rem;
   border-radius: 0.5rem;
@@ -114,17 +119,22 @@ body {
 
 /* Footer */
 
-.social-media-list {
+#footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.social-media-list {
+  display: flex;
   list-style-type: none;
   gap: 1rem;
 }
 
 .social-media-list a {
   text-decoration: none;
-  color: red;
+  color: rgb(0, 47, 255);
+  font-size: 1rem;
 }
 
 .social-media-list a:hover {
