@@ -58,20 +58,21 @@ body {
   font-size: 2rem;
 }
 
+.banner-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
 .banner-paragraph {
   text-align: justify;
   margin-top: 1rem;
   font-size: 1.5rem;
-}
-
-.banner-content {
-  overflow: hidden;
-  margin-top: 1.5rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, min(25rem));
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 2rem;
+  max-width: 30rem;
 }
 
 .banner-image {
@@ -114,7 +115,11 @@ body {
 }
 
 .project-card-tag {
-  position: absolute;
+  background-color: red;
+  padding: 0.5rem;
+  position: sticky;
+  top: 3rem;
+  text-align: left 1rem;
 }
 
 /* Footer */
